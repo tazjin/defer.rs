@@ -43,7 +43,8 @@ You can run the examples with `cargo run --example defer`, etc.
 
 * `Drop` is not guaranteed to run in case of panics or program aborts, if you
   need support for that check out [scopeguard](https://github.com/bluss/scopeguard)
-
+* `undefer` could be implemented safely by, for example, carrying a boolean that
+  by default causes execution to happen but can be flipped to disable it
 
 ## Further reading:
 
